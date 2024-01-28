@@ -1,17 +1,17 @@
 import styles from './Button.module.css';
 function Button3(props) {
-  /*const handleClick = () => {
-    console.log('Ouch');
-  };*/
+  let count = 0;
   const handleClick2 = (name) => {
-    console.log(`${name} - Stop clicking me!`);
+    if (count < 3) {
+      count++;
+      console.log(`${name} - You clicked me: ${count} times`);
+    } else {
+      console.log(`${name} - Stop clicking me!`);
+    }
   };
 
   return (
     <>
-      {/* <button onClick={handleClick} className={styles.button}>
-        Click Me 😇
-      </button> */}
       <button onClick={() => handleClick2('Magnus')} className={styles.button}>
         Click Me too 😇
       </button>
