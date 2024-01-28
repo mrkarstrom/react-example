@@ -1,18 +1,10 @@
 import styles from './Button.module.css';
-function Button3(props) {
-  let count = 0;
-  const handleClick2 = (name) => {
-    if (count < 3) {
-      count++;
-      console.log(`${name} - You clicked me: ${count} times`);
-    } else {
-      console.log(`${name} - Stop clicking me!`);
-    }
-  };
+function Button3() {
+  const handleClick = (e) => (e.target.textContent = 'Ouch!');
 
   return (
     <>
-      <button onClick={() => handleClick2('Magnus')} className={styles.button}>
+      <button onDoubleClick={(e) => handleClick(e)} className={styles.button}>
         Click Me too 😇
       </button>
     </>
