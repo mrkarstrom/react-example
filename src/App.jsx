@@ -1,10 +1,11 @@
 import Button3 from './Button/Button3';
+import ProfilePicture from './ProfilePicture';
 
 function App() {
   return (
     <div className="centered">
       <div className="card">
-        <Button3 name="Magnus"></Button3>
+        <ProfilePicture/>
       </div>
     </div>
   );
