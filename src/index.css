@@ -70,3 +70,18 @@
 .list {
   width: 300px;
 }
+
+.profile-picture-container {
+  height: 200px; /* Set a fixed height */
+  width: 200px;  /* Set a fixed width if needed */
+  overflow: hidden; /* Hide overflow content when the image is hidden */
+  cursor: pointer; /* Change cursor to pointer on hover for better UX */
+}
+
+.profile-picture-container img {
+  width: 100%; /* Make sure the image takes up 100% width of the container */
+}
+
+.profile-picture-container.hidden {
+  display: none; /* Hide the container when the image is hidden */
+}
